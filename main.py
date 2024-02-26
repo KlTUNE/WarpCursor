@@ -9,8 +9,8 @@ while True:
 
     if cursor_position.x >= BORDER and flag == 1:
         flag = 0
-        # if cursor_position.y < 420: pyautogui.moveTo(cursor_position.x, (cursor_position_old.y+1080) * (1079/1500))
-        # else: pyautogui.moveTo(cursor_position.x, 1079)
+        if cursor_position.y < 420: pyautogui.moveTo(cursor_position.x, (cursor_position_old.y+1080) * (1079/1500))
+        else: pyautogui.moveTo(cursor_position.x, 1079)
 
     elif cursor_position.x < BORDER and flag == 0:
         flag = 1
